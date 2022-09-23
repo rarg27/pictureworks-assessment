@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/', [Controller::class, 'storeComment']);
+
+Route::get('/', [Controller::class, 'getUser']);
+Route::get('/user/{id}', [Controller::class, 'getUser']);

@@ -19,11 +19,9 @@ class UserSeeder extends Seeder
             'Pedro'
         ];
 
-        for ($i = 1; $i <= 2; $i++) {
-            User::updateOrCreate([
-                'id' => $i
-            ], [
-                'name' => $namePool[$i - 1]
+        for ($i = 0; $i < 2; $i++) {
+            User::create([
+                'name' => $namePool[$i]
             ]);
         }
     }
