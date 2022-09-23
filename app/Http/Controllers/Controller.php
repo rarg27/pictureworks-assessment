@@ -18,7 +18,7 @@ class Controller extends BaseController
     {
         $id ??= request('id');
 
-        // strictly check id as integer
+        // strictly check if id is integer
         if (!(is_numeric($id) && floor($id) === floatval($id))) {
             return response('Invalid id', 422);
         }
