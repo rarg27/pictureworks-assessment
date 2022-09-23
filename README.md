@@ -1,20 +1,19 @@
 # Routes
 
-**[GET] /id=?** ```Fetch a user.```
+**[GET] /** `Fetch a user.`
 
 **Query Parameters:**
+<pre><code><b>id</b>      User ID. Required. Must be integer.</code></pre>
 
-> - **id** User ID. Required. Must be integer.
-
-**[GET] /user/{id}** ```Fetch a user.```
+**[GET] /user/{id}** `Fetch a user.`
 
 **URL Parameters:**
+<pre><code><b>id</b>      User ID. Required. Must be integer.</code></pre>
 
-> - **id** User ID. Required. Must be integer.
-
-**[POST] /** ```Append comments.```
+**[POST] /** `Append comments.`
 
 **Body Parameters:**
-> - **id** User ID. Required. Must be integer.
-> - **comments** Comments to be appended. Required.
-> - **password** User's Password. Required.
+<pre><code><b>id</b>       User ID. Required. Must be integer.
+<b>comments</b> Comments to be appended. Required.
+<b>password</b> User's Password. Required.
+</code></pre>
